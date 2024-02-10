@@ -31,9 +31,6 @@ Hand gesture recognition is an essential task in computer vision, with applicati
 - [OpenCV](https://opencv.org/)
 - [Google Developers](https://developers.google.com/)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
