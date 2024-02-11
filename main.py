@@ -29,12 +29,12 @@ while True:
 
                 if thumb_tip_y < index_tip_y and thumb_tip_y < middle_tip_y \
                 and thumb_tip_y < ring_tip_y and thumb_tip_y < pinky_tip_y and thumb_tip_y < thumb_mcp_y:   
-                    cv.putText(img, "THUMBS UP", (50, 90), cv.FONT_HERSHEY_PLAIN, 2, (255, 0, 255), 3)
+                    cv.putText(img, "THUMBS UP", (10, 140), cv.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 255), 3)
                     cv.imshow('Image', img)
                 
                 elif thumb_tip_y > index_tip_y and thumb_tip_y > middle_tip_y \
                 and thumb_tip_y > ring_tip_y and thumb_tip_y > pinky_tip_y and thumb_tip_y > thumb_mcp_y:
-                    cv.putText(img, "THUMBS DOWN", (50, 90), cv.FONT_HERSHEY_PLAIN, 2, (255, 0, 255), 3)
+                    cv.putText(img, "THUMBS DOWN", (10, 140), cv.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 255), 3)
                     cv.imshow('Image', img)  
 
                 mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
@@ -44,7 +44,7 @@ while True:
     fps = 1 / ( cTime - pTime)         
     pTime = cTime       
 
-    cv.putText(img, str(int(fps)), (10, 70), cv.FONT_HERSHEY_PLAIN, 2, (255, 0, 255), 3)
+    cv.putText(img, str(int(fps)), (10, 70), cv.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 255), 3)
 
     cv.imshow('Image', img)
         
@@ -53,4 +53,3 @@ while True:
 
 cap.release()
 cv.destroyAllWindows()
-    
